@@ -32,15 +32,23 @@ Our code is based on Python3.6. There are a few dependencies to run the code. Th
 ```
 ├── code
 │   ├── DTP_Net.py
-│   └── Param.py
-│   └── load_data_DTM.py
-│   └── main.py
+│   ├── Param.py
+│   ├── load_data_DTM.py
+│   ├── main.py
 │   └── metric.py
 ├── data
 │   ├── bousai_tokyo
+│   │   ├── all_60min_6.npz
+│   │   ├── day_info_1h.csv
+│   │   ├── dis_adjacent.npy
+│   │   └── hisflow_adjacent.npy
 │   └── bousai_osaka
+│       ├── all_60min_6.npz
+│       ├── day_info_1h.csv
+│       ├── dis_adjacent.npy
+│       └── hisflow_adjacent.npy
 ├── figure
-├── README.md
+└── README.md
 ```
 
 ## Todo
