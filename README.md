@@ -52,4 +52,6 @@ Our code is based on Python3.6. There are a few dependencies to run the code. Th
 ```
 
 ## Todo
-Data will be published after the paper received.
+Data will be published after the paper received.<br>
+The data will be normalized and anonymized, and only the approximate maximum value will be published to protect user privacy.<br>
+There will be a detailed description after after the data is published.
