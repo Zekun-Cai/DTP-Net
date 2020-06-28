@@ -44,7 +44,8 @@ def testModel(name, testData, dayinfo):
     testY = get_true(testData)
 
     pred = model.predict_generator(test_gene, steps=test_step, verbose=1)
-    pred = np.concatenate(pred, axis=-1)
+    if MultiTask:
+        pred = np.concatenate(pred, axis=-1)
     print('pred shape: {}'.format(pred.shape))
     pred_sparse = ss.csr_matrix(pred.reshape(pred.shape[0], -1))
     re_pred_sparse, re_testY = pred_sparse * MAX_DIFFUSION, testY * MAX_DIFFUSION
@@ -99,7 +100,8 @@ def trainModel(name, trainData, dayinfo):
     pred = model.predict_generator(test_generator(trainData[train_num:], dayinfo[train_num:],
                                                   BATCHSIZE, return_meta=Metadata, return_gcn=GCN,
                                                   desc_type=Descriptor, adj_type=AdjType), steps=val_step)
-    pred = np.concatenate(pred, axis=-1)
+    if MultiTask:
+        pred = np.concatenate(pred, axis=-1)
     print('pred shape: {}'.format(pred.shape))
     pred_sparse = ss.csr_matrix(pred.reshape(pred.shape[0], -1))
     valY = get_true(trainData[train_num:])
