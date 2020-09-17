@@ -1,5 +1,5 @@
 # Predicting Citywide Crowd Transition Process: <br>A Novel Challenge and A Deep Model
-Submission to ICDE: Predicting Citywide Crowd Transition Process: A Novel Challenge and A Deep Model
+Submission to AAAI21: Predicting Citywide Crowd Transition Process: A Novel Challenge and A Deep Model
 ## Introduction 
 Modeling citywide human mobility dynamically and continuously can be very significant to many smart city-related fields like transportation operation and crowd management. Governments and public service operators want to know how a crowd of people at a specific region and time stepwise transit to other regions in the short-term future. In this study, we propose a novel challenge to our urban computing community, which is to predict citywide crowd transition process constituted by a list of transition matrices from low order to high order, which can help us understand the details of crowd movements comparing to one-time crowd transition prediction.
 
